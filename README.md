@@ -76,24 +76,4 @@ The system reads gyroscopic data from an MPU6050 IMU, processes it on an Arduino
     * [cite_start]`receiver.ino`: Code to receive processed data from the FPGA and display it[cite: 207].
 * [cite_start]**`/simulation`**: Vivado testbenches used for verifying the designs with real IMU data[cite: 520].
 
----
 
-## Challenges and Future Work
-
-### Challenges Overcome
-
-* [cite_start]**Clock Domain Synchronization:** Successfully addressed by implementing asynchronous FIFO buffers, ensuring reliable data transfer between the Arduino and FPGA[cite: 507, 513].
-* [cite_start]**High Resource Usage:** The Hadamard-based algorithmic approach was developed to significantly reduce the number of multiplications, which in turn lowered logic resource consumption and latency compared to a direct implementation[cite: 508, 518].
-
-### Future Work
-
-The report suggests the following steps to extend the project:
-
-* [cite_start]**Hardware Deployment:** Deploy the designs on a physical FPGA board to evaluate real-world performance and resource usage[cite: 534].
-* [cite_start]**Algorithm Enhancement:** Integrate more advanced sensor fusion algorithms directly onto the FPGA[cite: 535].
-* [cite_start]**Power Analysis:** Conduct power consumption studies to optimize the design for low-power embedded systems[cite: 536].
-
-
-
-Find all project files at the official GitHub repository:
-[cite_start][**GITHUB REPOSITORY**](https://github.com/your-username/your-repo-name) [cite: 552]
