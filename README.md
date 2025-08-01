@@ -3,11 +3,7 @@
 
 ## Overview
 
-This project presents the design and simulation of a custom hardware accelerator for quaternion multiplication optimized for real-time orientation estimation using IMU data. Quaternions provide a robust way to represent 3D orientation without issues like gimbal lock, widely used in aerospace, robotics, and motion tracking.
-
-The computational complexity of quaternion operations poses challenges for general-purpose processors, so we designed an FPGA-based accelerator to offload these tasks and achieve faster, low-latency processing.
-
----
+This project involves designing and simulating a hardware accelerator specifically made to perform quaternion multiplication for real-time orientation estimation using data from an IMU sensor. Quaternions are a way to represent 3D orientation that avoids common problems like gimbal lock. Since quaternion calculations are complex and slow on normal processors, we created an FPGA-based accelerator to handle these calculations faster and with less delay. This helps improve the performance of systems that rely on quick, accurate orientation data.
 
 ## Key Features
 
